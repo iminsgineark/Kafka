@@ -1,0 +1,5 @@
+[2026-05-02 10:00:53,346] INFO [GroupCoordinator 1]: Member kafka-python-2.3.1-cff2c77d-a898-4c75-8847-3491fb414e9a in group group1 has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2026-05-02 10:00:53,358] INFO [GroupCoordinator 1]: Preparing to rebalance group group1 in state PreparingRebalance with old generation 17 (__consumer_offsets-40) (reason: removing member kafka-python-2.3.1-cff2c77d-a898-4c75-8847-3491fb414e9a on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2026-05-02 10:00:53,359] INFO [GroupCoordinator 1]: Group group1 with generation 18 is now empty (__consumer_offsets-40) (kafka.coordinator.group.GroupCoordinator)
+[2026-05-02 10:13:57,073] INFO [SnapshotGenerator id=1] Creating new KRaft snapshot file snapshot 00000000000000014455-0000000001 because we have waited at least 60 minute(s). (org.apache.kafka.image.publisher.SnapshotGenerator)
+[2026-05-02 10:13:57,100] INFO [SnapshotEmitter id=1] Successfully wrote snapshot 00000000000000014455-0000000001 (org.apache.kafka.image.publisher.SnapshotEmitter)

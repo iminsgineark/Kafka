@@ -7,4 +7,4 @@ consumer = KafkaConsumer(
 )
 
 for msg in consumer:
-    print("Consumer-1:", msg.value)
+    print("Consumer-2:", msg.value)

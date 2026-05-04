@@ -1,10 +1,12 @@
+import time
 from kafka import KafkaConsumer
 
 consumer = KafkaConsumer(
     'orders',
     bootstrap_servers='localhost:9092',
-    group_id='group-1'
+    group_id='group-parallel'
 )
 
 for msg in consumer:
-    print("Consumer-1:", msg.value)
+    print("Processing:", msg.value)
+    time.sleep(2)
