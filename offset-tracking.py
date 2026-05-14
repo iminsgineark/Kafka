@@ -16,4 +16,3 @@ while True:
     consumer.commit()
 
 
-# next topic - Lecture_4_2_03

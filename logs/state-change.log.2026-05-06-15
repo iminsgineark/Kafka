@@ -1,0 +1,7 @@
+[2026-05-06 15:05:00,003] INFO [Broker id=1] Transitioning 1 partition(s) to local leaders. (state.change.logger)
+[2026-05-06 15:05:00,013] INFO [Broker id=1] Creating new partition disk-demo-0 with topic id Pt1ND9rDRDeG8aYQQW27ZQ. (state.change.logger)
+[2026-05-06 15:05:00,020] INFO [Broker id=1] Leader disk-demo-0 with topic id Some(Pt1ND9rDRDeG8aYQQW27ZQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [1], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1. (state.change.logger)
+[2026-05-06 15:18:29,608] INFO [Broker id=1] Transitioning 1 partition(s) to local leaders. (state.change.logger)
+[2026-05-06 15:18:29,609] INFO [Broker id=1] Creating new partition retention-time-demo-0 with topic id Xt1Hes67TeO8fOo4Q2hPwQ. (state.change.logger)
+[2026-05-06 15:18:29,618] INFO [Broker id=1] Leader retention-time-demo-0 with topic id Some(Xt1Hes67TeO8fOo4Q2hPwQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [1], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1. (state.change.logger)
+[2026-05-06 15:18:53,002] INFO [Broker id=1] Deleting 1 partition(s). (state.change.logger)

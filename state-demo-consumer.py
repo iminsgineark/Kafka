@@ -1,13 +1,10 @@
 from kafka import KafkaConsumer
 
 consumer = KafkaConsumer(
-    'orders',
+    'state-demo',
     bootstrap_servers='localhost:9092',
-    group_id='coordinator-demo'
+    auto_offset_reset='earliest'
 )
 
-print("Consumer-2 Started...")
-
 for msg in consumer:
-    print("Consumer-2: ", msg.value)
-
+    print(msg.key, msg.value)

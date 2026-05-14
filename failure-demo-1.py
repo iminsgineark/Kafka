@@ -6,7 +6,7 @@ consumer = KafkaConsumer(
     bootstrap_servers='localhost:9092',
     group_id="failure-demo-1",
     enable_auto_commit=False,
-    auto_offset_reset='latest'
+    auto_offset_reset='earliest'
 )
 
 for message in consumer:
