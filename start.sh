@@ -2,22 +2,22 @@
 
 KAFKA_DIR=$(pwd)
 LOG_DIR="/tmp/kafka-logs"
-DATA_DIR="/tmp/kraft-combined-logs"   # default from server.properties
+DATA_DIR="/tmp/kraft-combined-logs"  
 CLUSTER_ID_FILE="$KAFKA_DIR/cluster.id"
 
 echo "Starting Kafka..."
 
-# Create log directory
+
 mkdir -p $LOG_DIR
 
-# Check if Kafka already running
+
 if lsof -i :9092 > /dev/null
 then
     echo "Kafka already running on port 9092"
     exit 1
 fi
 
-# Step 1: Generate Cluster ID (only once)
+
 if [ ! -f "$CLUSTER_ID_FILE" ]; then
     echo "Generating Cluster ID..."
     CLUSTER_ID=$($KAFKA_DIR/bin/kafka-storage.sh random-uuid)
@@ -26,7 +26,7 @@ else
     CLUSTER_ID=$(cat $CLUSTER_ID_FILE)
 fi
 
-# Step 2: Format storage (only if not already formatted)
+
 if [ ! -f "$DATA_DIR/meta.properties" ]; then
     echo "Formatting storage directory..."
     $KAFKA_DIR/bin/kafka-storage.sh format \
